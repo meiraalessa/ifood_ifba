@@ -1,0 +1,64 @@
+header > h1{
+    font-family: 'Nova Flat', cursive;
+    font-size:45px;
+    text-align: center;
+}
+p{
+    font-family: 'Nova Flat', cursive;
+    color:rgb(255, 255, 255);
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:5px solid #000000;
+    background-image: linear-gradient(to left, #3d0000, red);
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin:10px;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+      text-align: justify;
+  }
+  
+  .card span {
+    font-size: 16px;
+    color: #666;
+  }
+  nav button:hover{
+    background-color:#ff0606;
+    font-family: 'Nova Flat', cursive;
+    border-radius:5px solid red;
+  } 
+  .container-detalhe {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+      justify-items: center;
+  }
+  .link {
+    background-color: #ffffff;
+    color: #ff0606;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+      border-radius: 5px;
+      display:inline-block;
+      text-decoration:none;
+      margin:20px 0;
+  }
