@@ -1,0 +1,169 @@
+  /*este css serve tanto para o arquivo entregadores.php quanto para o arquivo restaurante.php como editor dos formularios*/
+/*não é dado contuação ao codigo pois foi informado que não havia necessidade de banco de dados*/
+
+  /*importase a fonte e define os padões do body*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background: linear-gradient(90deg, #f4c5c5, #cc6b6b);		
+}
+
+ /*definições do conteudo mostrado*/
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.tela {		
+	background: linear-gradient(90deg, #a45454, #b87878);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #965656;
+}
+
+.conteudo_tela {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+  /*edições do backgroud*/
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #963333;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #a83939, #994848);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #b95757;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+  /*definições dos campos de informação*/
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.campo_login{
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icone {
+	position: absolute;
+	top: 30px;
+	color: #b64a4a;
+}
+
+.login__entrar {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__entar:active,
+.login__entar:focus,
+.login__entar:hover {
+	outline: none;
+	border-bottom-color: #a14444;
+}
+
+.login__enviar {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #9e2929;
+	box-shadow: 0px 2px 2px #973c3c;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__enviar:active,
+.login__enviar:focus,
+.login__enviar:hover {
+	border-color: #a34343;
+	outline: none;
+}
+  /*definições do botão*/
+.button__icone {
+	font-size: 24px;
+	margin-left: auto;
+	color: #b94c4c;
+}
+
+  /*definições do nome da empresa*/
+.logo {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
